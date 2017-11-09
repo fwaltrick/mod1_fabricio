@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Cantarell')
 
 
+
 #mainHeader{
 	display: flex;
 	margin-bottom: 40px;
+}
+
+.subheader{
+	margin: ;
 }
 
 .navigation {
@@ -15,12 +20,13 @@ article{
 	max-width: 1000px;
 }
 
-#title {
+.title {
 	font-family: 'Fjalla One', sans-serif;
 }
 
-#titleArticle {
+#headerArticle {
 	font-family: 'Fjalla One', sans-serif;
+	color: #468952 ;
 	margin-bottom: 0;
 }
 
@@ -30,12 +36,14 @@ article{
 	
 }
 
+figure {
+	margin-left: 0; 
+	margin-right: 20px;
+}
 
 ul li{
 	font-family: 'Cantarell', sans-serif;
 }
-
-
 
 
 p {
@@ -44,18 +52,26 @@ p {
 	padding: 0.1em;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover{
+	color: #1FC73D;
+}
 
 /*h1 { 
 	font-size: 48px;
 	font-family: 'Fjalla One', sans-serif;
 }*/
 
-#menu ul {
+.menu ul {
     list-style-type: none;
+    color: gray;
 }
 
 
-#menu li {
+.menu li {
 	font-size: 16px;
     display: inline-block;
     padding: 10px;
@@ -66,7 +82,7 @@ p {
     margin-bottom: 0;
 }
 
-#menu li:first-child {
+.menu li:first-child {
 	border-left: none;
 	padding-left: 0;
 }
