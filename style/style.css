@@ -2,18 +2,32 @@
 @import url('https://fonts.googleapis.com/css?family=Cantarell')
 
 
-#header{
+#mainHeader{
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
-#home {
+.navigation {
 	display: flex;
-	margin-top: 50px;
+}
+
+article{	
+	max-width: 1000px;
 }
 
 #title {
 	font-family: 'Fjalla One', sans-serif;
+}
+
+#titleArticle {
+	font-family: 'Fjalla One', sans-serif;
+	margin-bottom: 0;
+}
+
+#logo {
+	float: left;
+	margin-right: 10px;
+	
 }
 
 
@@ -21,10 +35,7 @@ ul li{
 	font-family: 'Cantarell', sans-serif;
 }
 
-img {
-	float: left;
-	margin-right: 10px;
-}
+
 
 
 p {
@@ -32,6 +43,7 @@ p {
 	margin: 0.1em;
 	padding: 0.1em;
 }
+
 
 /*h1 { 
 	font-size: 48px;
@@ -51,6 +63,7 @@ p {
     padding: 0 1em;
     text-align: center;
     border-left: 1px solid;
+    margin-bottom: 0;
 }
 
 #menu li:first-child {
