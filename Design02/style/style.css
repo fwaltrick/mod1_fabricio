@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Cantarell');
+
+
+
+
+
+/* HEADER */
+
+header {
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 48px;
+    margin: 0 300px 0 0;
+}
+
+.mainHeader {
+    background-image: url('../images/design1_image1.jpeg');
+    background-position: 50% 20%;
+    overflow: hidden;
+    height: 200px;
+}
+
+.mainBar {
+    height: 40px;
+    margin-top: 0;
+    background-color: black;
+}
+
+.mainBar h2 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #D8D8D8;
+    margin: 0;
+}
+
+.navigation {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.navigation li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.button {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 16px;
+    background-color: #0671E4   ;
+    border: 1px solid #D4D4D4;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 8px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+/* CONTENT */
+
+aside {
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+
+.logo {
+    position: absolute;
+    top: 180px;
+    right: 70px;
+}
+
+
+#content {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+
+article {
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.titleArticle {
+    font-family: 'Fjalla One', sans-serif;
+    color: #E22F4E;
+    margin-bottom: 0
+}
+
+.date {
+    color: #E22F4E;
+}
+
+
+figure {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+
+p {
+    font-family: 'Cantarell', sans-serif;
+    margin: 0.1em;
+    padding: 0.1em;
+}
+
+
+.mail a:hover {
+    color: #1FC73D;
+}
