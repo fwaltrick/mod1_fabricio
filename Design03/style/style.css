@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cantarell');
 
 
-body {
-    background-image: url('../images/soccerfield2.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 
 
 /* HEADER */
@@ -27,7 +20,7 @@ header {
     background-color: white;
     border-radius: 10px;
     padding: 30px;
-    margin: 40px auto 10px auto;
+    margin: 30px auto 10px auto;
 }
 
 .mainHeader h1 {
@@ -43,15 +36,14 @@ header {
 .navigation {
     margin-top: 5px;
     text-align: right;
-
 }
 
-.logo img {
+#logo img {
     width: 100px;
     transition: all 0.3s ease-in-out 0.5s;
 }
 
-.logo:hover {
+#logo:hover {
     cursor: default;
     transform: scale(1.3) rotate(360deg);
     transition: all 0.3s ease-in-out 0.5s;
@@ -86,62 +78,30 @@ header {
 }
 
 
+/* BODY */
 
-
-
-
-
-/*.navigation a {
-    text-decoration: none;
+body {
+    background-image: url('../images/soccerfield2.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-.navigation a:hover {
-    color: #1FC73D;
-}*/
 
 /* CONTENT */
 
-
-
-.content {
-    display: flex;
-    max-width: 700px;
-    background-color: rgba(255,255,255, 0.75);
-    border-radius: 10px;
-    padding: 30px;
-    margin: 5px auto;
-}
-
-
 aside {
     margin-right: 20px;
-    
 }
 
-article {
+article, section {
     max-width: 600px;
     margin-top: 10px;
 }
-
-.titleArticle {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 22px;
-    color: #1E4EA8;
-    margin-top: 0px;
-    margin-bottom: 4px;
-}
-
-.date {
-    color: #E22F4E;
-    ;
-}
-
-
 figure {
     margin-left: 0;
     margin-right: 20px;
 }
-
 
 p {
     font-family: 'Cantarell', sans-serif;
@@ -149,20 +109,107 @@ p {
     padding: 0.1em;
 }
 
+ol,
+ul,
+th,
+td {
+    font-family: 'Cantarell', sans-serif;
+}
+
+table {
+    width: 650px;
+    border-collapse: collapse;
+    background: none;
+}
+
+/* Box for content */
+.content {
+    display: flex;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 5px auto;
+}
+
+/* Box for text only content: width larger / align justify */
+.text-only {
+    max-width: 650px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+.titleArticle {
+    font-family: 'Fjalla One', sans-serif;
+    color: #1E4EA8;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.titleTable {
+    font-family: 'Fjalla One', sans-serif;
+    color: #E22F4E;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.date {
+    color: #E22F4E;
+}
+
+
+/* Class of Tables for the schedule of games */
+
+.gameTable {
+    width: 650px;
+    border-collapse: collapse;
+}
+
+.gameTable tr {
+    background: #B1D5D5;
+}
+
+.gameTable td {
+    padding: 4px;
+}
+
+.gameTable th {
+    padding: 7px;
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    background: #4F853A;
+}
+
+/*put contacts in the same line */
+#gameContact {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* MAIL */
+
+
+/* It changes the standard color */
+
 .mail p {
-   font-family: 'Cantarell', sans-serif;
-   font-size: 16px;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 16px;
     margin: 0.1em;
     padding: 0.1em;
 }
+
 .mail a {
     text-decoration: none;
     color: #1E4EA8;
 }
 
-.mail a:hover{
+.mail a:hover {
     color: #E22F4E;
 }
 
-/* FOOTER */
 
+}
