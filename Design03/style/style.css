@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cantarell');
 
 
-
-
 /* HEADER */
 
 header {
@@ -11,12 +9,11 @@ header {
 }
 
 
-
 .mainHeader {
     display: flex;
     justify-content: center;
     height: 100px;
-    max-width: 700px;
+    width: 700px;
     background-color: white;
     border-radius: 10px;
     padding: 30px;
@@ -57,7 +54,7 @@ header {
 
 .button {
     font-family: 'Cantarell', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     background-color: black;
     border: none;
     color: white;
@@ -77,7 +74,6 @@ header {
     color: white;
 }
 
-
 /* BODY */
 
 body {
@@ -94,10 +90,12 @@ aside {
     margin-right: 20px;
 }
 
-article, section {
+article,
+section {
     max-width: 600px;
     margin-top: 10px;
 }
+
 figure {
     margin-left: 0;
     margin-right: 20px;
@@ -116,13 +114,18 @@ td {
     font-family: 'Cantarell', sans-serif;
 }
 
+
 table {
     width: 650px;
     border-collapse: collapse;
     background: none;
 }
 
+
+
+
 /* Box for content */
+
 .content {
     display: flex;
     max-width: 700px;
@@ -132,7 +135,11 @@ table {
     margin: 5px auto;
 }
 
+
+
+
 /* Box for text only content: width larger / align justify */
+
 .text-only {
     max-width: 650px;
     margin-top: 10px;
@@ -159,35 +166,58 @@ table {
 }
 
 
-/* Class of Tables for the schedule of games */
 
-.gameTable {
-    width: 650px;
+
+
+/* Class of tables for the schedule of games */
+
+.tableGame {
+    width: 625px;
     border-collapse: collapse;
 }
 
-.gameTable tr {
-    background: #B1D5D5;
+.tableGame tr {
+    background: white;
 }
 
-.gameTable td {
-    padding: 4px;
-}
-
-.gameTable th {
-    padding: 7px;
+.tableGame td {
+    font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 16px;
-    text-align: left;
-    color: white;
-    background: #4F853A;
+    padding: 4px;
+    border: 0.5px solid #DFDFDF;
 }
+
+.tableGame th {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    padding: 7px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background: black;
+    border: 0.5px solid #DFDFDF;
+}
+
+
+
+
+#tableLocation tr {
+    width: 650px;
+}
+
+.gameLocation {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
 
 /*put contacts in the same line */
+
 #gameContact {
     display: flex;
     justify-content: space-between;
 }
-
 
 
 /* MAIL */
@@ -212,4 +242,96 @@ table {
 }
 
 
+/* FORM */
+
+.form {
+    font-family: 'Cantarell', sans-serif;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 5px auto;
+}
+
+.form div {
+    margin: 0 1px 0 0;
+    padding: 4px 0;
+    flex: 1;
+}
+
+.form p,
+#formUniform {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    margin: 15px 0 0 0;
+}
+
+.form label {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.form input,
+select,
+option {
+    box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 5px;
+    margin: 2px 4px 2px 0;
+    border-radius: 5px;
+}
+
+
+.form select {
+    height: 22px;
+    font-size: 12px;
+}
+
+
+.form input[type="checkbox"] {
+    margin-right: 1px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#parentpermission {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.form input:focus,
+.form select:focus {
+    box-shadow: 0 0 1px #1E4EA8;
+    border: 0.3px solid #1E4EA8;
+}
+
+.fieldHalf {
+    width: 50%;
+}
+
+.fieldFull {
+    width: 99%;
+}
+
+.formFlex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.form input[type="submit"] {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 15px;
+    background-color: #1E4EA8;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#buttonSubmit {
+    text-align: center;
 }

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Northside Youth Soccer League</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link
+</head>
+
+<body>
+    <header>
+        <div class="mainHeader">
+            <div id="logo">
+                <a href="index.html"><img src="images/nysl_logo.png" alt="Logo NYSL" width ="150"></a>
+            </div>
+            <nav>
+                <h1>Northside Youth Soccer League</h1>
+                <ul class="navigation">
+                    <li>
+                        <button class="button"><a href="index.html">Home</a></button>
+                    </li>
+                    <li>
+                        <button class="button"><a href="about.html">About NYSL</a></button>
+                    </li>
+                    <li>
+                        <button class="button"><a href="rules.html">Rules & Policies</a></button>
+                    </li>
+                    <li>
+                        <button class="button"><a href="game_info.html">Game Information</a></button>
+                    </li>
+                    <li>
+                        <button class="button"><a href="registration.html">Registration</a></button>
+                    </li>
+                    <li>
+                        <button class="button"><a href="contact.html">Contact</a></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="form">
+        <main>
+            <section>
+                <form action="show_data.html" target="blank" method="get">
+                    <h2 class="titleArticle">Registration Form</h2>
+                    <label>Player's Name:</label>
+                    <div class="formFlex">
+                        <input type="text" id="firstName" placeholder="First Name" name="player_firstName" class="fieldHalf" autofocus>
+                        <input type="text" id="lastName" placeholder="Last Name" name="player_lastName" class="fieldHalf">
+                    </div>
+                    <div>
+                        <label for="address">Address:</label>
+                        <br>
+                        <input type="text" id="address1" placeholder="Adress line 1" name="player_adress1" class="fieldFull">
+                        <br>
+                        <input type="text" id="address2" placeholder="Adress line 2 (optional)" name="player_adress2" class="fieldFull">
+                    </div>
+                    <div class="formFlex">
+                        <div>
+                            <label for="city">City:</label>
+                            <br>
+                            <input type="text" id="city" name="player_city" class="fieldFull">
+                        </div>
+                        <div>
+                            <label for="zipcode">Zip Code:</label>
+                            <br>
+                            <input type="text" id="zipcode" name="player_zipcode" class="fieldFull">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="birthdate">Birth Date:</label>
+                        <br>
+                        <input type="date" id="birthdate" name="player_birthdate">
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <input type="radio" id="gender" name="player_gender" value="female">
+                        <label for="gender">Female</label>
+                        <input type="radio" id="gender" name="player_gender" value="male">
+                        <label for="gender">Male</label>
+                    </div>
+                    <div>
+                        <label>Grade:</label>
+                        <select>
+                            <option value=" ">Select your option</option>
+                            <option id="grade" name="player_grade" value="preschool">Pre-School</option>
+                            <option id="grade" name="player_grade" value="first">1st</option>
+                            <option id="grade" name="player_grade" value="second">2nd</option>
+                            <option id="grade" name="player_grade" value="third">3rd</option>
+                            <option id="grade" name="player_grade" value="fourth">4th</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="parent">Parent/Guardian:</label>
+                        <br>
+                        <input type="text" id="parent" name="player_parent" class="fieldFull">
+                    </div>
+                    <div class="formFlex">
+                        <div>
+                            <label for="phone">Contact Phone:</label>
+                            <br>
+                            <input type="tel" id="phone" name="player_phone" class="fieldFull">
+                        </div>
+                        <div>
+                            <label for="email">Contact Email:</label>
+                            <br>
+                            <input type="email" id="email" name="player_email" class="fieldFull">
+                        </div>
+                    </div>
+                    <p><strong> Which elementary schools do you live near?<strong> </p>
+                    <div class="formFlex">
+                        <div>
+                            <label>First Closest School:</label>
+                            <select id="firstClosest" name="player_firstClosest">
+                                <option value=" ">Select your option</option>
+                                <option value="ajkatzenmaier">AJ Katzenmaier</option>
+                                <option value="greenbay">Greenbay</option>
+                                <option value="howard">Howard A Yeager</option>
+                                <option value="marjorie">Marjorie P Hart</option>
+                                <option value="north">North Elementary</option>
+                                <option value="south">South Elementary</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Second Closest School:</label>
+                            <select id="secondClosest" name="player_secondClosest">
+                                <option value=" ">Select your option</option>
+                                <option value="ajkatzenmaier">AJ Katzenmaier</option>
+                                <option value="greenbay">Greenbay</option>
+                                <option value="howard">Howard A Yeager</option>
+                                <option value="marjorie">Marjorie P Hart</option>
+                                <option value="north">North Elementary</option>
+                                <option value="south">South Elementary</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                    <div>
+                        <p> <strong> Which position(s) do you <em>normally</em> play? </strong> (check all that apply)</p>
+                    <input type="checkbox" id="normallyPosition" name="player_normallyPosition" value="ajkatzenmaier">
+                    <label for="normallyPosition">Forward</label>
+                    <input type="checkbox" id="normallyPosition" name="player_normallyPosition" value="greenbay">
+                    <label for="normallyPosition">Midfield</label>
+                    <input type="checkbox" id="normallyPosition" name="player_normallyPosition" value="howard">
+                    <label for="normallyPosition">Defense</label>
+                    <input type="checkbox" id="normallyPosition" name="player_normallyPosition" value="marjorie">
+                    <label for="normallyPosition">Goalkeeper</label>
+    </div>
+    <div>
+        <p><strong>Which position(s) do you <em>want</em> to play? </strong> (check all that apply)</p>
+        <input type="checkbox" id="wantPosition" name="player_wantPosition" value="ajkatzenmaier">
+        <label for="wantPosition">Forward</label>
+        <input type="checkbox" id="wantPosition" name="player_wantPosition" value="greenbay">
+        <label for="wantPosition">Midfield</label>
+        <input type="checkbox" id="wantPosition" name="player_wantPosition" value="howard">
+        <label for="wantPosition">Defense</label>
+        <input type="checkbox" id="wantPosition" name="player_wantPosition" value="marjorie">
+        <label for="wantPosition">Goalkeeper</label>
+    </div>
+    <br>
+    <input type="checkbox" id="uniform" name="player_uniform" value="alreadyhave">
+    <label for="uniform" id="formUniform">Already Have a Uniform</label>
+    <div class="formFlex">
+        <div>
+            <label>Jersey Size:</label>
+            <select id="jerseySize" name="player_jerseySize">
+                <option value=" ">Select your option</option>
+                <option value="youthsmall">Youth Small</option>
+                <option value="youthmedium">Youth Medium</option>
+                <option value="youthlarge">Youth Large</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extralarge">Extra-Large</option>
+            </select>
+        </div>
+        <div>
+            <label>Shorts Size:</label>
+            <select>
+                <option value=" ">Select your option</option>
+                <option value="youthsmall">Youth Small</option>
+                <option value="youthmedium">Youth Medium</option>
+                <option value="youthlarge">Youth Large</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extralarge">Extra-Large</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <p><strong>Permission to Play</strong></p>
+        <p id="parentpermission"> I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.
+            <br>By entering my name below I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+    </div>
+    <div class="formFlex">
+        <div>
+            <label for="city">Parent/Guardian:</label>
+            <br>
+            <input type="text" id="permissionSignature" name="player_permissionSignature" class="fieldFull">
+        </div>
+        <div>
+            <label for="zipcode">Date:</label>
+            <br>
+            <input type="date" id="permissionDate"  name="player_permissionDate" class="fieldFull" value="mydate">
+        </div>
+    </div>
+    <div id="buttonSubmit">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+    </section>
+    </main>
+</body>
+</html>
