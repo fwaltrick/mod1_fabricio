@@ -2,15 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cantarell');
 
 
-body {
-    background-image: url('../images/soccerfield2.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-
-
 /* HEADER */
 
 header {
@@ -18,16 +9,15 @@ header {
 }
 
 
-
 .mainHeader {
     display: flex;
     justify-content: center;
     height: 100px;
-    max-width: 700px;
+    width: 700px;
     background-color: white;
     border-radius: 10px;
     padding: 30px;
-    margin: 40px auto 10px auto;
+    margin: 30px auto 10px auto;
 }
 
 .mainHeader h1 {
@@ -43,15 +33,14 @@ header {
 .navigation {
     margin-top: 5px;
     text-align: right;
-
 }
 
-.logo img {
+#logo img {
     width: 100px;
     transition: all 0.3s ease-in-out 0.5s;
 }
 
-.logo:hover {
+#logo:hover {
     cursor: default;
     transform: scale(1.3) rotate(360deg);
     transition: all 0.3s ease-in-out 0.5s;
@@ -65,7 +54,7 @@ header {
 
 .button {
     font-family: 'Cantarell', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     background-color: black;
     border: none;
     color: white;
@@ -85,63 +74,32 @@ header {
     color: white;
 }
 
+/* BODY */
 
-
-
-
-
-
-/*.navigation a {
-    text-decoration: none;
+body {
+    background-image: url('../images/soccerfield2.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-.navigation a:hover {
-    color: #1FC73D;
-}*/
 
 /* CONTENT */
 
-
-
-.content {
-    display: flex;
-    max-width: 700px;
-    background-color: rgba(255,255,255, 0.75);
-    border-radius: 10px;
-    padding: 30px;
-    margin: 5px auto;
-}
-
-
 aside {
     margin-right: 20px;
-    
 }
 
-article {
+article,
+section {
     max-width: 600px;
     margin-top: 10px;
 }
-
-.titleArticle {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 22px;
-    color: #1E4EA8;
-    margin-top: 0px;
-    margin-bottom: 4px;
-}
-
-.date {
-    color: #E22F4E;
-    ;
-}
-
 
 figure {
     margin-left: 0;
     margin-right: 20px;
 }
-
 
 p {
     font-family: 'Cantarell', sans-serif;
@@ -149,20 +107,231 @@ p {
     padding: 0.1em;
 }
 
+ol,
+ul,
+th,
+td {
+    font-family: 'Cantarell', sans-serif;
+}
+
+
+table {
+    width: 650px;
+    border-collapse: collapse;
+    background: none;
+}
+
+
+
+
+/* Box for content */
+
+.content {
+    display: flex;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 5px auto;
+}
+
+
+
+
+/* Box for text only content: width larger / align justify */
+
+.text-only {
+    max-width: 650px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+.titleArticle {
+    font-family: 'Fjalla One', sans-serif;
+    color: #1E4EA8;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.titleTable {
+    font-family: 'Fjalla One', sans-serif;
+    color: #E22F4E;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.date {
+    color: #E22F4E;
+}
+
+
+
+
+
+/* Class of tables for the schedule of games */
+
+.tableGame {
+    width: 625px;
+    border-collapse: collapse;
+}
+
+.tableGame tr {
+    background: white;
+}
+
+.tableGame td {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 4px;
+    border: 0.5px solid #DFDFDF;
+}
+
+.tableGame th {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    padding: 7px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background: black;
+    border: 0.5px solid #DFDFDF;
+}
+
+
+
+
+#tableLocation tr {
+    width: 650px;
+}
+
+.gameLocation {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+/*put contacts in the same line */
+
+#gameContact {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* MAIL */
+
+
+/* It changes the standard color */
+
 .mail p {
-   font-family: 'Cantarell', sans-serif;
-   font-size: 16px;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 16px;
     margin: 0.1em;
     padding: 0.1em;
 }
+
 .mail a {
     text-decoration: none;
     color: #1E4EA8;
 }
 
-.mail a:hover{
+.mail a:hover {
     color: #E22F4E;
 }
 
-/* FOOTER */
 
+/* FORM */
+
+.form {
+    font-family: 'Cantarell', sans-serif;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 5px auto;
+}
+
+.form div {
+    margin: 0 1px 0 0;
+    padding: 4px 0;
+    flex: 1;
+}
+
+.form p,
+#formUniform {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    margin: 15px 0 0 0;
+}
+
+.form label {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.form input,
+select,
+option {
+    box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 5px;
+    margin: 2px 4px 2px 0;
+    border-radius: 5px;
+}
+
+
+.form select {
+    height: 22px;
+    font-size: 12px;
+}
+
+
+.form input[type="checkbox"] {
+    margin-right: 1px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#parentpermission {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.form input:focus,
+.form select:focus {
+    box-shadow: 0 0 1px #1E4EA8;
+    border: 0.3px solid #1E4EA8;
+}
+
+.fieldHalf {
+    width: 50%;
+}
+
+.fieldFull {
+    width: 99%;
+}
+
+.formFlex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.form input[type="submit"] {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 15px;
+    background-color: #1E4EA8;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#buttonSubmit {
+    text-align: center;
+}
