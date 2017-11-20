@@ -4,7 +4,7 @@
 <head>
     <title>Northside Youth Soccer League</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link
+    <meta charset="UTF-8">
 </head>
 
 <body>
@@ -17,22 +17,34 @@
                 <h1>Northside Youth Soccer League</h1>
                 <ul class="navigation">
                     <li>
-                        <button class="button"><a href="index.html">Home</a></button>
+                        <a href="index.html">
+                            <button class="button">Home</button>
+                        </a>
                     </li>
                     <li>
-                        <button class="button"><a href="about.html">About NYSL</a></button>
+                        <a href="about.html">
+                            <button class="button">About NYSL</button>
+                        </a>
                     </li>
                     <li>
-                        <button class="button"><a href="rules.html">Rules & Policies</a></button>
+                        <a href="rules.html">
+                            <button class="button">Rules & Policies</button>
+                        </a>
                     </li>
                     <li>
-                        <button class="button"><a href="game_info.html">Game Information</a></button>
+                        <a href="game_info.html">
+                            <button class="button">Game Information</button>
+                        </a>
                     </li>
                     <li>
-                        <button class="button"><a href="registration.html">Registration</a></button>
+                        <a href="registration.html">
+                            <button class="button">Registration</button>
+                        </a>
                     </li>
                     <li>
-                        <button class="button"><a href="contact.html">Contact</a></button>
+                        <a href="contact.html">
+                            <button class="button">Contact</button>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -49,7 +61,7 @@
                         <input type="text" id="lastName" placeholder="Last Name" name="player_lastName" class="fieldHalf">
                     </div>
                     <div>
-                        <label for="address">Address:</label>
+                        <label>Address:</label>
                         <br>
                         <input type="text" id="address1" placeholder="Adress line 1" name="player_adress1" class="fieldFull">
                         <br>
@@ -74,20 +86,20 @@
                     </div>
                     <div>
                         <label>Gender:</label>
-                        <input type="radio" id="gender" name="player_gender" value="female">
-                        <label for="gender">Female</label>
-                        <input type="radio" id="gender" name="player_gender" value="male">
-                        <label for="gender">Male</label>
+                        <input type="radio" id="gender1" name="player_gender" value="female">
+                        <label for="gender1">Female</label>
+                        <input type="radio" id="gender2" name="player_gender" value="male">
+                        <label for="gender2">Male</label>
                     </div>
                     <div>
                         <label>Grade:</label>
-                        <select>
+                        <select id="grade" name="player_grade">
                             <option value=" ">Select your option</option>
-                            <option id="grade" name="player_grade" value="preschool">Pre-School</option>
-                            <option id="grade" name="player_grade" value="first">1st</option>
-                            <option id="grade" name="player_grade" value="second">2nd</option>
-                            <option id="grade" name="player_grade" value="third">3rd</option>
-                            <option id="grade" name="player_grade" value="fourth">4th</option>
+                            <option value="preschool">Pre-School</option>
+                            <option value="first">1st</option>
+                            <option value="second">2nd</option>
+                            <option value="third">3rd</option>
+                            <option value="fourth">4th</option>
                         </select>
                     </div>
                     <div>
@@ -107,7 +119,7 @@
                             <input type="email" id="email" name="player_email" class="fieldFull">
                         </div>
                     </div>
-                    <p><strong> Which elementary schools do you live near?<strong> </p>
+                    <p><strong> Which elementary schools do you live near?</strong> </p>
                     <div class="formFlex">
                         <div>
                             <label>First Closest School:</label>
@@ -134,83 +146,87 @@
                             </select>
                         </div>
                     </div>
-
-                    
                     <div>
-                        <p> <strong> Which position(s) do you <em>normally</em> play? </strong> (check all that apply)</p>
-                    <input type="checkbox" id="normallyPosition" name="player_normallyPosition" value="ajkatzenmaier">
-                    <label for="normallyPosition">Forward</label>
-                    <input type="checkbox" id="normallyPosition" name="player_normallyPosition" value="greenbay">
-                    <label for="normallyPosition">Midfield</label>
-                    <input type="checkbox" id="normallyPosition" name="player_normallyPosition" value="howard">
-                    <label for="normallyPosition">Defense</label>
-                    <input type="checkbox" id="normallyPosition" name="player_normallyPosition" value="marjorie">
-                    <label for="normallyPosition">Goalkeeper</label>
-    </div>
-    <div>
-        <p><strong>Which position(s) do you <em>want</em> to play? </strong> (check all that apply)</p>
-        <input type="checkbox" id="wantPosition" name="player_wantPosition" value="ajkatzenmaier">
-        <label for="wantPosition">Forward</label>
-        <input type="checkbox" id="wantPosition" name="player_wantPosition" value="greenbay">
-        <label for="wantPosition">Midfield</label>
-        <input type="checkbox" id="wantPosition" name="player_wantPosition" value="howard">
-        <label for="wantPosition">Defense</label>
-        <input type="checkbox" id="wantPosition" name="player_wantPosition" value="marjorie">
-        <label for="wantPosition">Goalkeeper</label>
-    </div>
-    <br>
-    <input type="checkbox" id="uniform" name="player_uniform" value="alreadyhave">
-    <label for="uniform" id="formUniform">Already Have a Uniform</label>
-    <div class="formFlex">
-        <div>
-            <label>Jersey Size:</label>
-            <select id="jerseySize" name="player_jerseySize">
-                <option value=" ">Select your option</option>
-                <option value="youthsmall">Youth Small</option>
-                <option value="youthmedium">Youth Medium</option>
-                <option value="youthlarge">Youth Large</option>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-                <option value="extralarge">Extra-Large</option>
-            </select>
-        </div>
-        <div>
-            <label>Shorts Size:</label>
-            <select>
-                <option value=" ">Select your option</option>
-                <option value="youthsmall">Youth Small</option>
-                <option value="youthmedium">Youth Medium</option>
-                <option value="youthlarge">Youth Large</option>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-                <option value="extralarge">Extra-Large</option>
-            </select>
-        </div>
-    </div>
-    <div>
-        <p><strong>Permission to Play</strong></p>
-        <p id="parentpermission"> I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.
-            <br>By entering my name below I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
-    </div>
-    <div class="formFlex">
-        <div>
-            <label for="city">Parent/Guardian:</label>
-            <br>
-            <input type="text" id="permissionSignature" name="player_permissionSignature" class="fieldFull">
-        </div>
-        <div>
-            <label for="zipcode">Date:</label>
-            <br>
-            <input type="date" id="permissionDate"  name="player_permissionDate" class="fieldFull" value="mydate">
-        </div>
-    </div>
-    <div id="buttonSubmit">
-        <input type="submit" value="Submit">
-    </div>
+                        <div>
+                            <p> <strong> Which position(s) do you <em>normally</em> play? </strong> (check all that apply)</p>
+                            <input type="checkbox" id="normallyPosition1" name="player_normallyPosition" value="forward">
+                            <label for="normallyPosition1">Forward</label>
+                            <input type="checkbox" id="normallyPosition2" name="player_normallyPosition" value="midfield">
+                            <label for="normallyPosition2">Midfield</label>
+                            <input type="checkbox" id="normallyPosition3" name="player_normallyPosition" value="defense">
+                            <label for="normallyPosition3">Defense</label>
+                            <input type="checkbox" id="normallyPosition4" name="player_normallyPosition" value="goalkeeper">
+                            <label for="normallyPosition4">Goalkeeper</label>
+                        </div>
+                        <div>
+                            <p><strong>Which position(s) do you <em>want</em> to play? </strong> (check all that apply)</p>
+                            <input type="checkbox" id="wantPosition1" name="player_wantPosition" value="forward">
+                            <label for="wantPosition1">Forward</label>
+                            <input type="checkbox" id="wantPosition2" name="player_wantPosition" value="greenbay">
+                            <label for="wantPosition2">Midfield</label>
+                            <input type="checkbox" id="wantPosition3" name="player_wantPosition" value="howard">
+                            <label for="wantPosition3">Defense</label>
+                            <input type="checkbox" id="wantPosition4" name="player_wantPosition" value="marjorie">
+                            <label for="wantPosition4">Goalkeeper</label>
+                        </div>
+                        <br>
+                    </div>
+                    <input type="checkbox" id="formUniform" name="player_uniform" value="alreadyhave">
+                    <label for="formUniform">Already Have a Uniform</label>
+                    <div class="formFlex">
+                        <div>
+                            <label>Jersey Size:</label>
+                            <select id="jerseySize" name="player_jerseySize">
+                                <option value=" ">Select your option</option>
+                                <option value="youthsmall">Youth Small</option>
+                                <option value="youthmedium">Youth Medium</option>
+                                <option value="youthlarge">Youth Large</option>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="extralarge">Extra-Large</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Shorts Size:</label>
+                            <select id="shortsSize" name="player_shortsSize">
+                                <option value=" ">Select your option</option>
+                                <option value="youthsmall">Youth Small</option>
+                                <option value="youthmedium">Youth Medium</option>
+                                <option value="youthlarge">Youth Large</option>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="extralarge">Extra-Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <p><strong>Permission to Play</strong></p>
+                        <p id="parentpermission"> I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.
+                            <br>By entering my name below I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                    </div>
+                    <div class="formFlex">
+                        <div>
+                            <label for="permissionSignature">Parent/Guardian:</label>
+                            <br>
+                            <input type="text" id="permissionSignature" name="player_permissionSignature" class="fieldFull">
+                        </div>
+                        <div>
+                            <label for="zipcode">Date:</label>
+                            <br>
+                            <input type="date" id="permissionDate" name="player_permissionDate" class="fieldFull">
+                        </div>
+                    </div>
+                    <div id="buttonSubmit">
+                        <input type="submit" value="Submit">
+                    </div>
+    
     </form>
     </section>
     </main>
+</div>
+
 </body>
+
 </html>
