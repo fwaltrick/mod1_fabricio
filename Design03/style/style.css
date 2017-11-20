@@ -52,7 +52,7 @@ header {
     display: inline-block;
 }
 
-.button {
+.buttonNav {
     font-family: 'Cantarell', sans-serif;
     font-size: 13px;
     background-color: black;
@@ -62,17 +62,18 @@ header {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-.button:hover {
+.buttonNav:hover {
     background-color: #0671E4;
     color: white;
 }
 
-.button a {
+/*.button a {
     text-decoration: none;
     color: white;
-}
+}*/
 
 /* BODY */
 
@@ -128,7 +129,7 @@ table {
 
 .content {
     display: flex;
-    max-width: 700px;
+    width: 700px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 30px;
